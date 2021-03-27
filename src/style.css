@@ -1,0 +1,78 @@
+
+h1 {
+    text-align: center;
+    color: #03506f;
+    font-size: 45px;
+    text-transform: capitalize;
+  }
+  
+  ul {
+    list-style: none;
+    text-align: right;
+    color: #03506f;
+  }
+  
+  li {
+    color: #a3ddcb;
+    text-decoration: underline;
+    text-align: right;
+  }
+  
+  .btn-primary {
+    background-color: #03506f;
+    border: #03506f;
+  }
+  
+  .card {
+    border-color: #03506f;
+  }
+  
+  .card-text {
+    color: #0a043c;
+  }
+  
+  .card-title {
+    color: #03506f;
+  }
+  
+  .fa-cloud-rain {
+    color: #616161;
+    font-size: 30px;
+  }
+  
+  .fa-sun {
+    color: #fbc02d;
+    font-size: 30px;
+  }
+  
+  .fa-cloud-sun {
+    color: #607d8b;
+    font-size: 30px;
+  }
+  
+  .fa-bolt {
+    color: #ffc107;
+    font-size: 30px;
+  }
+  
+  .bottom-left {
+    display: relative;
+    margin: 105px 0 0 0;
+  }
+  
+  .bottom-right {
+    display: relative;
+    margin: 50px 0 0 0;
+  }
+  
+  .bottom-middle {
+    display: relative;
+    text-align: middle;
+    margin: 140px 0 0 200px;
+    color: #a3ddcb;
+  }
+  
+  .change-city {
+    color: #03506f;
+  }
+  

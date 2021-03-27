@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/630592f5f0.js" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="h1">It is currently 78°F in Jacksonville, FL</h1>
+
+      <div class="card" style="width: 100%">
+        <div class="card-body">
+          <h5 class="card-title" id="date-time"></h5>
+          <div class="row">
+            <div class="col-2"><i class="fas fa-cloud-rain"></i></div>
+            <div class="col-10">
+              <div class="row">
+                <div class="col-6 card-text" id="current-day-high-low">75º / 47ºF</div>
+                <div class="col-6 card-text" id="current-day-humidity">Humidity : 82%</div>
+                <div class="col-6 card-text" id="current-day-pressure">Pressure: 2in</div>
+                <div class="col-6 card-text" id="current-day-windspeed">Wind 15 mph</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<br>
+
+<div class="row row-cols-md-5 g-4">
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+            <div class="col card-text"><i class="fas fa-cloud-rain"></i></div>
+            <div class="col card-text"> 68º/41º <br /> 100%</div>
+        </div>
+        <h5 class="card-title">Tuesday</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+          <div class="row">
+            <div class="col card-text"><i class="fas fa-cloud-sun"></i></div>
+            <div class="col card-text"> 74º/43º <br /> 61%</div>
+        </div>
+        <h5 class="card-title">Wednesday</h5>
+      </div>
+      </div>
+    </div>
+ <div class="col">
+    <div class="card">
+      <div class="card-body">
+          <div class="row">
+            <div class="col card-text"><i class="fas fa-bolt"></i></div>
+            <div class="col card-text"> 75º/48º <br /> 100%</div>
+        </div>
+        <h5 class="card-title">Thursday</h5>
+      </div>
+      </div>
+    </div>
+    <div class="col">
+    <div class="card">
+      <div class="card-body">
+          <div class="row">
+            <div class="col card-text"><i class="fas fa-cloud-sun"></i></div>
+            <div class="col card-text"> 76º/55º <br /> 45%</div>
+        </div>
+        <h5 class="card-title">Friday</h5>
+      </div>
+      </div>
+    </div>
+    <div class="col">
+    <div class="card">
+      <div class="card-body">
+          <div class="row">
+            <div class="col card-text"><i class="fas fa-sun"></i></div>
+            <div class="col card-text"> 71º/52º <br /> 0%</div>
+        </div>
+        <h5 class="card-title">Saturday</h5>
+      </div>
+      </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<div class="row">
+    <div class="col bottom-left">
+        <label for="change-city">Change City:</label>
+        <form id="change-city-form">
+          <input class="form-control" type="text" placeholder="Search for a City" aria-label="default input example" id="change-city" autocomplete="off" />
+        </form>
+        <button type="button" class="btn btn-primary btn-sm" id="current-city-button">Current Location</button>
+    </div>
+    <div class="col bottom-middle">ºF / ºC</div>
+    <div class="col bottom-right">
+        <Ul class="favorites">
+            Favorites: <br />
+            <li class="favorite-cities">Tampa, FL</li>
+            <li>O'Brien, FL</li>
+            <li>Denver, CO</li>
+            <li>Current Location</li>
+        </Ul>
+    </div>
+</div>
+
+</div>
+
+<script src="src/index.js"></script>
+</body>
+  </body>
+</html>
